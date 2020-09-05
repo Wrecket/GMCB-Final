@@ -4,35 +4,105 @@ html {
     
 }
 
-.html {
+.background {
+    background-image: url("../img/bowl-bg2.jpg") !important;
+    background-size: cover;
+    background-position: center bottom;
+    height: 100%;
+    padding: 0 !important;
+}
+.background-des {
+    background-image: url("../img/des-width.jpg") !important;
+    background-size: cover;
+    height: 100%;
+    padding: 0 !important;
+}
+.background-mains {
+    background-image: url("../img/mains-width.jpg") !important;
+    background-size: cover;
+    height: 100%;
+    padding: 0 !important;
+}
+.background-sides {
+    background-image: url("../img/sides-width.jpg") !important;
+    background-size: cover;
+    height: 100%;
+    padding: 0 !important;
+}
+.intro {
+    font-family: 'Anton', sans-serif;
+    color: white;
+    margin-left: -10%;
+}
+.intro span {
+    font-size: 2.5rem;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url("img/tomato-length.jpg");
+  
+    /* Set a specific height */
+    min-height: 500px; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+body {
     position: relative;
 }
 
-body {
-    background-color: rgb(255, 224, 229) !important;
+.mains {
+     width: 870px;
+     position: absolute;
+     top: 38%;
+     left: 34%;
+     display: none;
 }
 
-.binder {
+.mainsclick {
     position: absolute;
-    top: -48px;
-    left: 150px;
+    left: 15%;
+    top: 3%;
+    width: 800px;
+}
+
+.sidesclick {
+    position: absolute;
+    left: 3%;
+    bottom: 0;
+    width: 800px;
+}
+
+.dessertclick {
+    position: absolute;
+    right: 3%;
+    bottom: 0;
+    width: 800px;
+}
+/* reuseables */
+.paddersml {
+    height: 25px;
+}
+.paddermed {
+    height: 100px;
+}
+.padderlg {
+    height: 250px
+}
+.padderbg {
     height: 75px;
 }
-.binder2 {
-    position: absolute;
-    top: -48px;
-    right: 150px;
-    height: 75px;
-}
-
-.flower {
-    position: absolute;
-    left: 0;
-    opacity: 0.5
-}
-
-
 /* container */
+
+
+.card {
+    margin-top: 30px;
+}
 .pad-wrap {
     background-color: white !important;
     /* background-image: url("../img/chalklg.png");
@@ -48,43 +118,61 @@ footer {
     bottom: 0;
     width: 100%;
     background-color: white;
-    height: 100px;
-    border-top-right-radius: 100%;
-    position: absolute;
+    height: 75px;
+    border-top-left-radius: 100%;
+    position: fixed;
+    opacity: 0.8
+}
+
+.carousel-item {
+    height: 500px;
 }
 
 /* nav */
-.navbar-wrap {
-    top: 0;
-    width: 100%;
-    background-color: white;
-    height: 110px;
-    border-bottom-left-radius: 50%;
-    border-bottom-right-radius: 50%;
-    
-    }
-
-.logo {
-    margin-top: 2% !important;
+.navbar {
+    border-bottom-right-radius: 100%;
+    opacity: 0.8;
 }
 
+.nav-link {
+    font-size: 2.1rem;
+}
+.navbar-nav {
+    margin-left: 2%;
+}
 /* reuseable code */
 
 .font {
     font-family: 'Dancing Script', cursive;
 }
 
+.mobile {
+    display: none;
+}
+
 @media (max-width: 550px) {
-    .flower {
+    .background-mob {
+        background-image: url("../img/tomato-length.jpg") !important;
+        min-height: 100%; 
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 0 !important;
+    }
+    .mainsclick, .sidesclick, .dessertclick {
         display: none;
     }
-    .binder {
-        left: 5px;
+    .mobile {
+        display: block;
     }
-    .binder2 {
-        right: 5px;
+    .desktop {
+        display: none;
     }
-    .pad-wrap {
-        height: 400px;
+    .card {
+        margin-left: 7%;
+    }
+    .wrap {
+        padding: 0 !important;
     }
 }
