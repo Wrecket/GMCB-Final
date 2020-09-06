@@ -1,232 +1,249 @@
 body,
 html {
-    height: 100%;
-    
+	height: 100%;
 }
-.subheader{
-    font-size: 4rem;
-    color: red;
+.subheader {
+	font-size: 4rem;
+	color: red;
 }
 .background {
-    background-image: url("../img/bowl-bg2.jpg") !important;
-    background-size: cover;
-    background-position: center bottom;
-    height: 100%;
-    padding: 0 !important;
+	background-image: url("../img/bowl-bg2.jpg") !important;
+	background-size: cover;
+	background-position: center bottom;
+	height: 100%;
+	padding: 0 !important;
 }
 .background-des {
-    background-image: url("../img/des-width.jpg") !important;
-    min-height: 100%; 
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 0 !important;
+	background-image: url("../img/des-width.jpg") !important;
+	min-height: 100%;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 0 !important;
 }
 .background-mains {
-    background-image: url("../img/mains-width.jpg") !important;
-    background-size: cover;
-    height: 100%;
-    padding: 0 !important;
+	background-image: url("../img/mains-width.jpg") !important;
+	background-size: cover;
+	height: 100%;
+	padding: 0 !important;
 }
 .background-sides {
-    background-image: url("../img/sides-width.jpg") !important;
-    background-size: cover;
-    height: 100%;
-    padding: 0 !important;
+	background-image: url("../img/sides-width.jpg") !important;
+	background-size: cover;
+	height: 100%;
+	padding: 0 !important;
 }
 .intro {
-    font-family: 'Anton', sans-serif;
-    color: white;
-    margin-left: -10%;
+	font-family: 'Anton', sans-serif;
+	color: white;
+	margin-left: -10%;
 }
 .intro span {
-    font-size: 2.5rem;
+	font-size: 2.5rem;
 }
 
 .parallax {
-    /* The image used */
-    background-image: url("img/tomato-length.jpg");
-  
-    /* Set a specific height */
-    min-height: 500px; 
-  
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+	/* The image used */
+	background-image: url("img/tomato-length.jpg");
+
+	/* Set a specific height */
+	min-height: 500px;
+
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
 
 body {
-    position: relative;
+	position: relative;
 }
 
 .mains {
-     width: 870px;
-     position: absolute;
-     top: 38%;
-     left: 34%;
-     display: none;
+	width: 870px;
+	position: absolute;
+	top: 38%;
+	left: 34%;
+	display: none;
 }
 
 .mainsclick {
-    position: absolute;
-    left: 15%;
-    top: 3%;
-    width: 800px;
+	position: absolute;
+	left: 15%;
+	top: 3%;
+	width: 300px;
 }
 
 .sidesclick {
-    position: absolute;
-    left: 3%;
-    bottom: 0;
-    width: 800px;
+	position: absolute;
+	left: 3%;
+	bottom: 0;
+	width: 300px;
 }
 
 .dessertclick {
-    position: absolute;
-    right: 3%;
-    bottom: 0;
-    width: 800px;
+	position: absolute;
+	right: 3%;
+	bottom: 0;
+	width: 300px;
 }
 .subheader span {
-    color: black;
+	color: black;
 }
 /* reuseables */
 .paddersml {
-    height: 25px;
+	height: 25px;
 }
 .paddermed {
-    height: 100px;
+	height: 100px;
 }
 .padderlg {
-    height: 250px
+	height: 250px;
 }
 .padderbg {
-    height: 75px;
+	height: 75px;
 }
 /* container */
 .card-body {
-    background-color: rgba(255, 255, 255, 0.267);
-    color: white;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 10%!important;
-    padding: 0!important;
+	background-color: rgba(255, 255, 255, 0.267);
+	color: white;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 10% !important;
+	padding: 0 !important;
 }
 .col-mar {
-    width: auto!important
+	width: auto !important;
 }
 .card {
-    margin: 30px;
-    border: none;
-    outline: none!important;
-    position: relative;
-    box-shadow: 0 0 15px 1px rgb(0, 0, 0);;
+	margin: 30px;
+	border: none;
+	outline: none !important;
+	position: relative;
+	box-shadow: 0 0 15px 1px rgb(0, 0, 0);
 }
 .pad-wrap {
-    background-color: rgb(255, 255, 255) !important;
-    /* background-image: url("../img/chalklg.png");
+	background-color: rgb(255, 255, 255) !important;
+	/* background-image: url("../img/chalklg.png");
     background-size: cover;
     background-repeat: none; */
-    height: 600px;
-    margin-top: 20px;
-    position: relative;
-    box-shadow: 1px 0px 10px rgb(212, 212, 212) ;
-    
+	height: 600px;
+	margin-top: 20px;
+	position: relative;
+	box-shadow: 1px 0px 10px rgb(212, 212, 212);
 }
 
 .recipe-wrap {
-    background-color: rgb(243, 237, 210);
-    height: 750px;
-    width: 100%;
-    text-align: left;
-    padding-top: 25px;
-    font-size: 1.4rem;
-    position: relative;
+	background-color: rgb(243, 237, 210);
+	height: auto !important;
+	width: 100%;
+	text-align: left;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	font-size: 1.4rem;
+	position: relative;
 }
 
-.name {
-    margin-bottom: 5%;
+.rec-pic {
+	width: 500px !important;
+}
+
+.name-wrap li {
+	padding: 10px;
 }
 
 .ingredients {
-    height: 300px;
+	height: auto !important;
+}
+
+.recipe {
+	height: auto !important;
+}
+
+.name {
+	margin-bottom: 5%;
+}
+
+.ingredients {
+	height: 300px;
 }
 
 footer {
-    bottom: 0;
-    width: 100%;
-    background-color: white;
-    height: 75px;
-    border-top-left-radius: 100%;
-    position: fixed;
-    opacity: 0.8
+	bottom: 0;
+	width: 100%;
+	background-color: white;
+	height: 75px;
+	border-top-left-radius: 100%;
+	position: fixed;
+	opacity: 0.8;
 }
 
 .carousel-item {
-    height: 500px;
+	height: 500px;
 }
 
 /* nav */
 .navbar {
-    border-bottom-right-radius: 100%;
-    opacity: 0.8;
+	border-bottom-right-radius: 100%;
+	opacity: 0.8;
 }
 
 .nav-link {
-    font-size: 2.1rem;
+	font-size: 2.1rem;
 }
 .navbar-nav {
-    margin-left: 2%;
+	margin-left: 2%;
 }
 /* reuseable code */
 
 .font {
-    font-family: 'Anton', sans-serif;
+	font-family: 'Anton', sans-serif;
 }
 
 .font2 {
-    font-family: 'Cookie', cursive;
+	font-family: 'Cookie', cursive;
 }
 
 .font3 {
-    font-family: 'Long Cang', cursive;
+	font-family: 'Long Cang', cursive;
 }
 
 .mobile {
-    display: none;
+	display: none;
 }
 
 .fader {
-    opacity: 0.6;
+	opacity: 0.6;
 }
 
 @media (max-width: 550px) {
-    .background-mob {
-        background-image: url("../img/tomato-length.jpg") !important;
-        min-height: 100%; 
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        padding: 0 !important;
-    }
-    .mainsclick, .sidesclick, .dessertclick {
-        display: none;
-    }
-    .mobile {
-        display: block;
-    }
-    .desktop {
-        display: none;
-    }
-    .card {
-        margin-left: 7%;
-    }
-    .wrap {
-        padding: 0 !important;
-    }
+	.background-mob {
+		background-image: url("../img/tomato-length.jpg") !important;
+		min-height: 100%;
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		padding: 0 !important;
+	}
+	.mainsclick,
+	.sidesclick,
+	.dessertclick {
+		display: none;
+	}
+	.mobile {
+		display: block;
+	}
+	.desktop {
+		display: none;
+	}
+	.card {
+		margin-left: 7%;
+	}
+	.wrap {
+		padding: 0 !important;
+	}
 }
