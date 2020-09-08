@@ -2,18 +2,10 @@ const name = document.getElementById('name');
 const ingredients = document.getElementById('ingredients');
 const recipe = document.getElementById('recipe');
 const image = document.getElementById('image');
-/* We don't need these
-const ginger = document.getElementById("ging");
-const pineapple = document.getElementById("pine");
-const carrot = document.getElementById("carr");
-const toffee = document.getElementById("toff");
-const icedbun = document.getElementById("iced");
-const card = document.getElementsByClassName("card");
-*/
+const mains = document.querySelector(".mainsclick");
+const background = document.querySelector("#background");
 
-// An object containing the recipes
 const recipes = {
-	// Each recipe as a property of `recipes`
 	ging  : {
 		name        : 'Sticky Ginger Cake',
 		ingredients :
@@ -129,6 +121,11 @@ const recipes = {
 	}
 };
 
+mains.addEventListener("mouseover", fuction(){
+	
+	background.style.backgroundImage=("url('../img/gmcbmain2.jpg') !important")
+})
+
 document.querySelectorAll('.card').forEach((item) => {
 	item.addEventListener('mouseover', function() {
 		this.classList.remove('fader');
@@ -156,22 +153,5 @@ document.querySelectorAll('.card').forEach((item) => {
 	});
 });
 
-// ginger.addEventListener("click", function() {
-//    recipecard(ginger1);
-// });
 
-// carrot.addEventListener("click", function() {
-//     recipecard(carrot1);
-//  });
 
-// pineapple.addEventListener("click", function() {
-//     recipecard(pineapple1);
-//  });
-
-// iced.addEventListener("click", function() {
-//     recipecard(iced1);
-//  });
-
-// toffee.addEventListener("click", function() {
-//     recipecard(toffee1);
-//  });
