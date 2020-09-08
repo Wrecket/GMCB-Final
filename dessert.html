@@ -13,8 +13,8 @@
 <body>
     <div class="container-fluid background-des text-center">
           <!-- navbar -->
-          <nav class="navbar font navbar-expand-lg navbar-light bg-light">
-              <a class="navbar-brand" href="index.html"><img src="img/gmcblogo.png" alt="logo"></a>
+          <nav class="navbar font navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="index.html"><img src="img/gmcblogo2.png" alt="logo"></a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
               </button>
@@ -25,6 +25,7 @@
               </div>
           </nav>
       <!-- /navbar -->
+      <div class="container-fluid topban"></div>
       <div class="paddersml"></div>
       <div class="container">
          
@@ -37,11 +38,11 @@
             <div class="container recipe-box">
               <div class="row">
                 <div class="col-* ml-5">
-                  <div class="container font name-wrap">
-                    <ul>
-                      <li class="card fader" id="ging">Sticky ginger cake</li>
-                      <li class="card fader" id="pine">Pineapple cakes</li>
-                      <li class="card fader" id="carr">Carrot cake</li>
+                  <div class="container font2 name-wrap">
+                    <ul class="white">
+                      <li class="card fader" id="ging">Sticky ginger cake<div class="tab"></div></li>
+                      <li class="card fader" id="pine">Pineapple cakes<div class="tab"></div></li>
+                      <li class="card fader" id="carr">Carrot cake<div class="tab"></div></li>
                       <li class="card fader" id="toff">Sticky toffee pudding</li>
                     </ul>
                   </div>
@@ -79,21 +80,22 @@
             </div>         
           </div>
           <div class="col-8">
-            <div class="container font3 recipe-wrap">
-              <div class="container name">
-                <h2 class="recipe-title">Recipe name: <span id="name"></span></h2>
+            <div class="container font3 text-center recipe-wrap">
+              <div class="paddersml"></div>
+              <div class="container mover white name">
+                <h2 class="recipe-recipe"><span id="name">Select your recipe</span></h2>
+                <p id="remove">Use the buttons to the left to make a selection</p>
               </div>
               <!-- grid -->
-              <div class="container">
+              <div class="container white">
                 <div class="row">
                   <div class="col-sm-4">
-                    <div class="container ingredients">
-                      <p class="ingredients">Ingredients:<br><br><span id="ingredients"></span></p>
+                    <div class="container ingredients"></span><br><br><span id="ingredients"></span></p>
                     </div>
                   </div>
                   <div class="col-sm-8">
                     <div class="container recipe">
-                      <p class="recipe-recipe">Method:<br><br><span id="recipe"></span></p>
+                      <p class="recipe-recipe"><span class="bigger"></span><br><br><span id="recipe"></span></p>
                     </div>
                   </div>
                 </div>
