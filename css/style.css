@@ -10,8 +10,8 @@ html {
 	width: 300px;
 }
 #name {
-	font-weight: bold;
-	font-size: 3rem;
+	text-decoration: underline;
+	text-decoration-color: rgb(247, 227, 163)
 }
 #remove {
 	margin-top: -2% !important;
@@ -23,7 +23,18 @@ html {
 	font-size: 1.7rem;
 }
 .recipe-recipe {
+	list-style-type: decimal !important;
+	list-style-position: inside !important;
+	margin: 0!important;
+	padding: 0!important;
+
+}
+.recipe-ing {
 	list-style-type: none !important;
+	list-style-position: inside !important;
+	margin: 0!important;
+	padding: 0!important;
+
 }
 .background {
 	background-image: url("../img/gmcbmain2.jpg") !important;
@@ -141,6 +152,26 @@ body {
 	height: 10% !important;
 	padding: 0 !important;
 }
+.image-wrap {
+	background-color: rgb(214, 194, 168);
+	height: 211px!important;
+	width: 250px!important;
+	z-index: 5;
+	position: relative;
+	
+}
+.image-wrap-inner {
+	background-color: rgb(255, 255, 255);
+	height: 191px!important;
+	width: 230px!important;
+	z-index: 10;
+	position: absolute;
+	top: 10px !important;
+	left: 10px;
+	border-top-right-radius: 40%;
+	overflow: hidden;
+	border: 2px white solid;
+}
 .tab {
 	background-color: white;
 	width: 5px;
@@ -160,7 +191,7 @@ body {
 	box-shadow: 0 0 10px 10px rgb(0, 0, 0);
 	background-color: rgb(44, 44, 44) !important;
 	font-size: 1rem !important;
-	border-right: 5px !important !important;
+	border-right: 5px !important;
 	border-color: white;
 }
 .pad-wrap {
@@ -190,11 +221,18 @@ body {
 }
 
 .rec-pic {
-	width: 500px !important;
+	width: 230px !important;
+	position: absolute;
+	left:0;
 }
 
 .name-wrap li {
 	padding: 10px;
+}
+
+.name-wrapper {
+	background-color: white;
+	height: 100%;
 }
 
 .ingredients {
@@ -203,14 +241,16 @@ body {
 
 .recipe {
 	height: auto !important;
+	background: rgb(255, 254, 251);
+	border: 3px solid rgb(240, 240, 240);
+	padding: 3%;
+	margin-left: 0!important;
 }
 
 .name {
-	margin-bottom: -17%;
-}
-
-.name2 {
-	margin-bottom: -2%;
+	padding-left: 0!important;
+	margin-left: 0!important;
+	
 }
 
 .ingredients {
@@ -221,7 +261,7 @@ footer {
 	bottom: 0;
 	width: 100%;
 	background-color: rgb(26, 26, 26) !important;
-	height: 25px;
+	height: 50px;
 	border-top-left-radius: 100%;
 	position: fixed;
 	opacity: 0.8;
@@ -231,12 +271,38 @@ footer {
 	height: 500px;
 }
 
+.buttonx {
+	width: 100%;
+	border-right: 3px solid rgb(211, 165, 123) ;
+	margin: 5%;
+	background-color: antiquewhite;
+	border-radius: 5%;
+	padding: 3%;		
+}
+.stats {
+	background-color: rgb(247, 247, 247);
+	width: 250px;
+	margin: auto;
+}
+.stats-inner {
+	font-size: 1.2rem;
+	color: rgb(190, 133, 80);;
+}
+
+.subhead-wrap {
+	border-top: 2px solid rgb(153, 87, 26);
+	border-bottom: 2px solid rgb(153, 87, 26);
+	padding-left: 0 !important;
+}
+.padwrap {
+	padding: 0 3% !important;
+}
 /* nav */
 .navbar {
 	border-bottom-right-radius: 100%;
 	opacity: 0.8;
 	background-color: rgb(26, 26, 26) !important;
-	height: 25px;
+	height: 50px;
 	padding-left: 0 !important;
 }
 
@@ -246,18 +312,13 @@ footer {
 .navbar-nav {
 	margin-left: 2%;
 }
+.navbar-brand {
+	margin-left: 1%;
+}
+
 /* reuseable code */
-
 .font {
-	font-family: 'Anton', sans-serif;
-}
-
-.font2 {
-	font-family: 'Cookie', cursive;
-}
-
-.font3 {
-	font-family: 'Long Cang', cursive;
+	font-family: 'Playfair Display', serif;
 }
 
 .mobile {
@@ -266,6 +327,10 @@ footer {
 
 .fader {
 	opacity: 0.6;
+}
+
+.brown {
+	color: rgb(211, 165, 123);
 }
 
 @media (max-width: 550px) {
@@ -289,9 +354,7 @@ footer {
 	.desktop {
 		display: none;
 	}
-	.card {
-		margin-left: 7%;
-	}
+	
 	.wrap {
 		padding: 0 !important;
 	}

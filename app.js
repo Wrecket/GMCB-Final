@@ -13,10 +13,12 @@ const recipes = {
 	ging  : {
 		name        : 'Sticky Ginger Cake',
 		ingredients :
-			'Ingredients:<br><br> <ol><li>50g/20oz Butter</li><li>200g/8oz Stoned dates</li><li>300g/10oz Dark muscado sugar</li><li>2 eggs</li><li>50g/2oz Root ginger grated (2tsp)</li><li>Grated zest of a lemon</li><li>200g/8oz SR Flour</li><li>1 Bramley apple (9oz) peeled and chopped</li></ol>',
+			'<span class="bold">Ingredients<br><br> <ol class="recipe-ing"><li>50g/20oz Butter</li><li>200g/8oz Stoned dates</li><li>300g/10oz Dark muscado sugar</li><li>2 eggs</li><li>50g/2oz Root ginger grated (2tsp)</li><li>Grated zest of a lemon</li><li>200g/8oz SR Flour</li><li>1 Bramley apple (9oz) peeled and chopped</li></ol>',
 		recipe      :
-			'Method:<br><br><ul class="recipe-recipe"><li> Butter and line a 20cm round cake tin</li><li>Put fdates in bowl and cover with boiling water</li><li>Heat butter in a pan and stir in the sugar. Allow to cool slightly</li><li>Beat in the eggs, ginger and lemon zest, then drain the dates, add to pan and mix well</li>                   <li>Stir in the flour then apples</li>                  <li>Spoon into cake tin, put cake on baking tray to stop the base browning too much.</li>                   <li>cook on gas 4/160 deg for 1 1/2 hours. If not cooked, cover with foil and cook for 15-30 mins more.</li>                   <li>Allow to cool in tin, then melt white chocolate drizzle over cake.</li></ul>',
-		image       : "<img src='img/GingerSticky.jpg' class='rec-pic' alt='sticky ginger cake' style='width: 100%'>"
+			'<span class="bold">Method</span><br><br><ul class="recipe-recipe"><li> Butter and line a 20cm round cake tin</li><li>Put dates in bowl and cover with boiling water</li><li>Heat butter in a pan and stir in the sugar. Allow to cool slightly</li><li>Beat in the eggs, ginger and lemon zest, then drain the dates, add to pan and mix well</li>                   <li>Stir in the flour then apples</li>                  <li>Spoon into cake tin, put cake on baking tray to stop the base browning too much.</li>                   <li>cook on gas 4/160 deg for 1 1/2 hours. If not cooked, cover with foil and cook for 15-30 mins more.</li>                   <li>Allow to cool in tin, then melt white chocolate drizzle over cake.</li></ul>',
+		image       : "<img src='img/GingerSticky.jpg' class='rec-pic' alt='sticky ginger cake' style='width: 100%'>",
+		cooks : "90 mins",
+		temperature: "Gas 4/160 Deg"
 	},
 
 	carr  : {
@@ -139,15 +141,25 @@ document.querySelectorAll('#clicker').forEach((item) => {
 	});
 });
 
-document.querySelectorAll('.card').forEach((item) => {
+document.querySelectorAll('.buttonx').forEach((item) => {
 	item.addEventListener('mouseover', function() {
 		this.classList.remove('fader');
 	});
 });
 
-document.querySelectorAll('.card').forEach((item) => {
+
+document.querySelectorAll('.buttonx').forEach((item) => {
 	item.addEventListener('mouseout', function() {
 		this.classList.add('fader');
+	});
+});
+
+document.querySelectorAll('.buttonx').forEach((item) => {
+	item.addEventListener('click', function() {
+		this.classList.add('animate__pulse');
+		setTimeout(() => {
+			this.classList.remove('animate__pulse');
+		}, 2000);
 	});
 });
 
@@ -157,12 +169,13 @@ function recipecard(id) {
 	ingredients.innerHTML = r.ingredients;
 	recipe.innerHTML = r.recipe;
 	image.innerHTML = r.image;
-	remove.innerHTML = '';
-	margin.classList.remove('name');
-	margin.classList.add('name2');
+	cooks.innerHTML = r.cooks;
+	temp.innerHTML = r.temperature;
+
+	
 }
 
-document.querySelectorAll('.card').forEach((item) => {
+document.querySelectorAll('.buttonx').forEach((item) => {
 	item.addEventListener('click', function() {
 		obj = this.id;
 		recipecard(obj);

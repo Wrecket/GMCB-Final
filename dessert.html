@@ -5,122 +5,80 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Long+Cang&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <title>Document</title>
 </head>
+<header>
+    <!-- navbar -->
+    <nav class="navbar font navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="index.html"><img src="img/gmcbmainbig.png" alt="logo"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+              
+          </ul>
+          </div>
+      </nav>
+  <!-- /navbar -->
+</header>
 <body>
-    <div class="container-fluid background-des text-center">
-          <!-- navbar -->
-          <nav class="navbar font navbar-expand-lg navbar-light">
-            <a class="navbar-brand" href="index.html"><img src="img/gmcblogo2.png" alt="logo"></a>
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav">
-                  
-              </ul>
-              </div>
-          </nav>
-      <!-- /navbar -->
-      <div class="container-fluid topban"></div>
-      <div class="paddersml"></div>
-      <div class="container">
-         
-      </div>
-      <div class="paddersml"></div>
-      <!-- grid -->
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-3">
-            <div class="container recipe-box">
-              <div class="row">
-                <div class="col-* ml-5">
-                  <div class="container font2 name-wrap">
-                    <ul class="white">
-                      <li class="card fader" id="ging">Sticky ginger cake<div class="tab"></div></li>
-                      <li class="card fader" id="pine">Pineapple cakes<div class="tab"></div></li>
-                      <li class="card fader" id="carr">Carrot cake<div class="tab"></div></li>
-                      <li class="card fader" id="toff">Sticky toffee pudding</li>
-                    </ul>
-                  </div>
-                  <!-- card -->
-                  <!-- <div class="fader card" id="ging" style="width: 5rem;">
-                      <img class="card-img-top" src="img/GingerSticky.jpg" alt="Card image cap">
-                    </div> -->
-                  <!-- /card -->
-                  <!-- card -->
-                  <!-- <div class="fader card" id="pine" style="width: 5rem;">
-                      <img class="card-img-top" src="img/pineapplecake.jpg" alt="Card image cap">
-                    </div> -->
-                  <!-- /card -->
-                  <!-- <div class="padderbg"></div>
-                  <div class="padderbg"></div>
-                </div>
-                <div class="col-*"> -->
-                  <!-- card -->
-                  <!-- <div class="fader card" id="carr" style="width: 5rem;">
-                      <img class="card-img-top" src="img/carrot2.jpg" alt="Card image cap">
-                    </div> -->
-                  <!-- /card -->
-                  <!-- card -->
-                  <!-- <div class="fader card" id="toff" style="width: 5rem;">
-                      <img class="card-img-top" src="img/stickytoffee.jpg" alt="Card image cap">
-                    </div> -->
-                  <!-- /card -->
-                  <!-- card -->
-                  <!-- <div class="fader card" id="iced" style="width: 5rem;">
-                    <img class="card-img-top" src="img/icedcreambun.jpg" alt="Card image cap">
-                  </div> -->
-                <!-- /card -->
-                </div>
-              </div>
-            </div>         
-          </div>
-          <div class="col-8">
-            <div class="container font3 text-center recipe-wrap">
-              <div class="paddersml"></div>
-              <div class="container mover white name">
-                <h2 class="recipe-recipe"><span id="name">Select your recipe</span></h2>
-                <p id="remove">Use the buttons to the left to make a selection</p>
-              </div>
-              <!-- grid -->
-              <div class="container white">
-                <div class="row">
-                  <div class="col-sm-4">
-                    <div class="container ingredients"></span><br><br><span id="ingredients"></span></p>
-                    </div>
-                  </div>
-                  <div class="col-sm-8">
-                    <div class="container recipe">
-                      <p class="recipe-recipe"><span class="bigger"></span><br><br><span id="recipe"></span></p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- /grid -->
-              <div class="paddermed"></div>
-              <div class="container text-center image-wrap">
-                <span id="image" class="image-fluid"></span>
-              </div>
-            </div>
-          </div>
+    <div class="container-fluid">
+    <div class="paddersml"></div>
+    <div class="container-fluid padwrap font">
+        <div class="container-fluid subhead-wrap font">
+            <h2 class="subhead">Dessert Menu</h2>
+            <p class="subhead-under brown">Select from the below list to see the containing recipe.</p>
         </div>
-      </div>
-      <!-- /grid -->
-      
+        <div class="paddersml"></div>
+        <div class="container-fluid">
+  <div class="row">
+    <div class="col-2">
+        <div class="buttonx fader animate__animated" id="ging">Sticky ginger cake</div>
+        <div class="buttonx fader animate__animated" id="pine">Pineapple cakes</div>
+        <div class="buttonx fader animate__animated" id="carr">Carrot cake</div>
+        <div class="buttonx fader animate__animated" id="toff">Sticky toffee pudding</div>
     </div>
-
-            
+    <div class="col-2">
+        <div class="container image-wrap text-center">
+            <div class="container image-wrap-inner">
+                <span id="image" class="image-fluid"><image class="rec-pic" height="100%" src="img/strawberry-width.jpg"></span>
+            </div>    
+        </div>
+        <div class="stats">
+            <p><span class="stats-inner">Cook Time </span><span id="cooks"></span><br>
+            <span class="stats-inner">Temperature </span><span id="temp"></span></p>
+        </div>
+        <div>
+            <span id="ingredients"></span></p>
+        </div>   
     </div>
+    <div class="col-8">
+        <div class="container name">
+            <h3 class="recipe-recipe"><span id="name">Recipe Name</span></h3>
+        </div>
+        <div class="paddersml"></div>
+        <div class="container recipe">
+        <span id="recipe">Select a recipe on the left hand side.</span>
+        </div>
+    </div>
+  </div>
+</div>
+    </div>  
+</div>
 </body>
 <footer class="footer">
     
 </footer> 
     <script src="app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script> 
 </html>
+    
