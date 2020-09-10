@@ -22,6 +22,11 @@ html {
 .bigger {
 	font-size: 1.7rem;
 }
+.copyright {
+	position: absolute;
+	bottom: 0;
+	right:2%;
+}
 .recipe-recipe {
 	list-style-type: decimal !important;
 	list-style-position: inside !important;
@@ -76,6 +81,7 @@ html {
 	color: white;
 	margin-left: -10%;
 }
+
 .intro span {
 	font-size: 2.5rem;
 }
@@ -126,6 +132,8 @@ body {
 .subheader span {
 	color: black;
 }
+
+
 /* reuseables */
 .white {
 	color: white;
@@ -143,6 +151,10 @@ body {
 	height: 75px;
 }
 /* container */
+.top-banner {
+padding: 0 !important;
+margin-bottom: 2%;;
+}
 .card-body {
 	background-color: rgba(255, 255, 255, 0.473);
 	color: white;
@@ -221,7 +233,7 @@ body {
 }
 
 .rec-pic {
-	width: 230px !important;
+	height: 230px !important;
 	position: absolute;
 	left:0;
 }
@@ -265,6 +277,11 @@ footer {
 	border-top-left-radius: 100%;
 	position: fixed;
 	opacity: 0.8;
+	z-index: 50;
+}
+
+.footpad {
+	height: 50px;
 }
 
 .carousel-item {
@@ -282,7 +299,7 @@ footer {
 .stats {
 	background-color: rgb(247, 247, 247);
 	width: 250px;
-	margin: auto;
+	margin: auto !important;
 }
 .stats-inner {
 	font-size: 1.2rem;
@@ -296,10 +313,18 @@ footer {
 }
 .padwrap {
 	padding: 0 3% !important;
+	margin: 0 !important;
+}
+.padwrap2 {
+	padding: 0 10% !important;
+}
+.book-title {
+	position: absolute;
+	bottom: 0;
+	left: 5%;
 }
 /* nav */
 .navbar {
-	border-bottom-right-radius: 100%;
 	opacity: 0.8;
 	background-color: rgb(26, 26, 26) !important;
 	height: 50px;
@@ -357,5 +382,17 @@ footer {
 	
 	.wrap {
 		padding: 0 !important;
+	}
+	.mob-books {
+		margin: auto!important;
+	}
+	.text-center-mob {
+		text-align: center;
+	}
+	.buttonx {
+		margin: 5% 0!important ;
+	}
+	#centerrow.row {
+		display: block;
 	}
 }
