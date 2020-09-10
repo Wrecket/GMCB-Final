@@ -342,6 +342,10 @@ footer {
 }
 
 /* reuseable code */
+.underline {
+	color: rgb(206, 199, 174);
+	
+}
 .font {
 	font-family: 'Playfair Display', serif;
 }
@@ -378,6 +382,7 @@ footer {
 	}
 	.desktop {
 		display: none;
+		height: 1px !important;
 	}
 	
 	.wrap {
