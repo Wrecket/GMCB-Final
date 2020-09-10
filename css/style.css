@@ -361,6 +361,9 @@ footer {
 .brown {
 	color: rgb(211, 165, 123);
 }
+.clickon {
+	display: none;
+}
 
 @media (max-width: 550px) {
 	.background-mob {

@@ -210,6 +210,18 @@ function recipecard(id) {
 document.querySelectorAll('.buttonx').forEach((item) => {
 	item.addEventListener('click', function() {
 		obj = this.id;
-		recipecard(obj);
+		recipecard(obj);		
 	});
 });
+
+document.querySelectorAll('.buttonx').forEach((item) => {
+	item.addEventListener('click', function() {
+		hider();		
+	});
+});
+
+function hider(){
+	document.querySelectorAll(".hider").forEach((item) => {
+		item.classList.remove("clickon");
+	})
+}
