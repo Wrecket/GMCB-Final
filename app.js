@@ -70,10 +70,10 @@ const recipes = {
 		ingredients :
 			'<span class="bold">Ingredients</span><br><br><ol><li>150g Button mushrooms</li><li>4 Skinless cooked chicken breast</li><li>100g Cooked ham</li><li>350g/12oz Freshly made cheese sauce</li><li>1 Onion chopped</li><li>300g Puff pastry</li><li>2 tbsp Milk</li></ol>',
 		recipe      :
-			'<span class="bold">Method</span><br><br><ul class="recipe-recipe"><li>Thickly slice mushroom then fry in butter with the onion</li><li>Cut cooked chicken into chunks</li><li>Roughly cut ham</li><li>Pur the cheese sauce over the mushrooms, chicken, ham and (placeholder) then mix well.</li><li>Make pies using puff pastry and fill</li><li>Cook on gas 6 (time placeholder)</li></ul> ',
+			'<span class="bold">Method</span><br><br><ul class="recipe-recipe"><li>Thickly slice mushroom then fry in butter with the onion</li><li>Cut cooked chicken into chunks</li><li>Roughly cut ham</li><li>Pur the cheese sauce over the mushrooms, chicken, ham and (placeholder) then mix well.</li><li>Make pies using puff pastry and fill</li><li>Cook on gas 6 for 15 minutes or until ready.</li></ul> ',
 			image       : "<img src='img/crustypuff.jpg' class='rec-pic' alt='crusty puff pies' style='width: 100%'>",
-			cooks : "25 mins",
-			temperature: "Gas 6"
+			cooks : "15 mins",
+			temperature: "Gas 6/200 Deg"
 	},
 
 	mush  : {
