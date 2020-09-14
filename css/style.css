@@ -319,9 +319,18 @@ footer {
 	padding: 0 10% !important;
 }
 .book-title {
+	font-size: 1.2rem;
+	
+}
+.book-title-wrap {
+	background-color: rgba(192, 147, 96, 0.438);
 	position: absolute;
 	bottom: 0;
-	left: 5%;
+	left: 0;
+	padding: 2%;
+	text-align: left;
+	width: 100%;
+	margin: 0!important
 }
 /* nav */
 .navbar {
